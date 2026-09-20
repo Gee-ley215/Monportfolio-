@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- En-tête / Navigation -->
+  <header>
+    <div class="logo">
+      <a href="#accueil">MonPortfolio</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu Principal -->
+  <main>
+  <!-- Section Accueil -->
+    <section id="accueil">
+        <h1>Bonjour, je suis <span>Casales Peterson</span></h1>
+        <p>Développeur Web & Manager stategique en innovation</p>
+        <h2>Transformer les idees en projets, les projets en solutions et les solutions en impact</h2>
+        <a href="#projets" class="btn">Voir mes projets</a>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos">
+  <!-- 1. Le titre doit être en dehors du conteneur flex -->
+  <h2>A propos de moi</h2>
+
+  <!-- 2. Le conteneur Flex englobe UNIQUEMENT le bloc texte et l'image -->
+  <div class="about-container">
+
+    <!-- Bloc Texte -->
+    <div class="about-text">
+      <p>
+        Dynamique et rigoureux, titulaire d'une Licence en Économie et Gestion avec une spécialisation en Marketing & Commerce je poursuis actuellement mon Master 1 en Entrepreneuriat et Management de l’Innovation à l’Université Ibn Tofail.
+      </p>
+      <p>
+        Mon parcours académique m’a permis de développer des connaissances en management, marketing, commerce, gestion financière, innovation et gestion de projets.
+      </p>
+      <p>
+        Mon expérience comme bénévole à Caritas m’a également permis de développer capacités d’analyse, de communication, d’adaptation et de travail en équipe, notamment à travers l’identification des besoins et l’orientation des personnes accompagnées.
+      </p>
+    </div>
+
+    <!-- Bloc Image -->
+    <div class="about-image">
+      <img src="peter_image.jpeg" alt="peter_image">
+    </div>
+
+  </div>
+</section>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+      <h2>Mes Compétences</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Management & stratégie</h3>
+          <p>
+            <ul> <li>Management stratégique et opérationnel</li>
+            <li>Management des ressources humaines</li>
+        <li>Gestion et pilotage des projets innovants</li></ul>
+          </p>
+        </article>
+        <article class="skill-card">
+          <h3>Marketing & commerce</h3>
+          <p>
+            <ul><li>Marketing stratégique & Commerce électronique</li>
+            <li>Communication & Techniques de vente</li>
+        <li>Développement commercial</li></ul>
+          </p>
+        </article>
+        <article class="skill-card">
+          <h3>Analyse & Gestion des projets innovantes</h3>
+          <p>
+            <ul><li>Analyse de l’environnement économique</li>
+            <li>Veil & Analyse des données</li>
+        <li>Méthodologies de recherche qualitative et quantitative</li></ul></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Projet 1</h3>
+          <h4>"projet de recherche"</h4>
+          <p>Les dark stores et les magasins éphémères : l’avenir du commerce physique face à l’essor du digital.</p>
+          <a href="../ProjetFinale_Casales Peterson_/Projet de recherche.pdf" class="project-link">Voir le projet</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Projet 2</h3>
+          <p>Ce projet a été réalisé lors de la formation D-CLIC.</p>
+          <a href="../ProjetFinale_Casales Peterson_/calculateur.html" class="project-link">Voir le projet</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <h2>Me Contacter</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name"placeholder= "Entrez votre nom complet" required> 
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre adresse mail" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tapez votre message"></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Liaison avec le fichier JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
